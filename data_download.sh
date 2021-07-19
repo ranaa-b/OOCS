@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir experiments/data
+
+
+wget -O norb.zip https://zenodo.org/record/4537099/files/norb.zip?token=eyJhbGciOiJIUzUxMiIsImV4cCI6MTY0NDQ0NzU5OSwiaWF0IjoxNjEzMTI0NzM1fQ.eyJkYXRhIjp7InJlY2lkIjo0NTM3MDk5fSwiaWQiOjEyNzUxLCJybmQiOiJjYjA3NzY1MCJ9.6fyMz5zbjlg_Y3RBESeEz5GlmdE-9X7wjdcl9Oe_tc5mnqe8j9DVMeKNOE4_p7amC6hXwLQ4ae5LFoZO73ZPcA
+unzip norb.zip -d experiments/data/
+rm norb.zip
+
+wget -O imagenetSubset.zip -c  https://zenodo.org/record/4533686/files/imagenetSubset.zip?token=eyJhbGciOiJIUzUxMiIsImV4cCI6MTY0MjExNDc5OSwiaWF0IjoxNjEzMDMwMTM4fQ.eyJkYXRhIjp7InJlY2lkIjo0NTMzNjg2fSwiaWQiOjEyNzIyLCJybmQiOiI1NWQ2NjFiMCJ9.oW_xWNq4AerSLxjrjCslgkiuTW-MzWpqCEULytDCXC8HocX_EJbSQT8WF0IRAJweRvBb7q23ObEzma4aBbnOqQ
+unzip imagenetSubset.zip -d experiments/data/
+rm imagenetSubset.zip
